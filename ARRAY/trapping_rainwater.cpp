@@ -8,12 +8,12 @@ int trapMax(int a[], int n)
     int left[n];
     int right[n];
     left[0] = a[0];
-    for (int i = 1; i < n; i++)
+    for (int i = 1; i < n; i++) // Left Max
     {
         left[i] = max(a[i], left[i - 1]);
     }
     right[n - 1] = a[n - 1];
-    for (int i = n - 2; i >= 0; i--)
+    for (int i = n - 2; i >= 0; i--) // Right Max
     {
         right[i] = max(a[i], right[i + 1]);
     }
