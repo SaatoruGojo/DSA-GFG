@@ -28,7 +28,7 @@ vector<vector<int>> permutation(vector<int> &a)
 
 int main()
 {
-    vector<int> a = {1, 2, 3};
+    vector<int> a = {1, 2};
     vector<vector<int>> b = permutation(a);
 
     for (const auto &y : b)
