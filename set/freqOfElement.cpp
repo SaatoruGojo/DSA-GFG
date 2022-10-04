@@ -9,10 +9,13 @@ void solve(int a[], int n)
         m[a[i]]++;
     }
 
-    for (auto x : m)
+    for (int i = 0; i < n; ++i)
     {
-        cout << x.first << ' ' << x.second;
-        cout << endl;
+        if (m[a[i]] != -1)
+        {
+            cout << a[i] << ' ' << m[a[i]] << endl;
+            m[a[i]] = -1;
+        }
     }
 }
 
